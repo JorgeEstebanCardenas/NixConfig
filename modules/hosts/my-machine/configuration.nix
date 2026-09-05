@@ -6,6 +6,7 @@
   imports =
     [ # Include the results of the hardware scan.
       self.nixosModules.myMachineHardware
+      self.nixosModules.myNiri
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
