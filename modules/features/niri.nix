@@ -17,6 +17,8 @@
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
         input.keyboard.xkb.layout = "latam";
+	
+	input.touchpad.natural-scroll = true;
 
         layout.gaps = 5;
 
@@ -25,6 +27,8 @@
           "Mod+Q".close-window = _: { };
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
 	  "Mod+D".spawn-sh = lib.getExe pkgs.fuzzel;
+	  "Mod+F".maximize-column = _: { };
+	  "Mod+Shift+F".fullscreen-window = _: { };
         };
       };
     };
