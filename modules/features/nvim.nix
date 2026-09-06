@@ -13,12 +13,12 @@
           vim.theme = {
 	    enable = true;
 	    name = "tokyonight";
-	    style = "dark";
-	  }
-		
-	  vim.viAlias = false;
-          vim.vimAlias = true;
+	    style = "night";
+	  };
 
+	  vim.viAlias = true;
+	  vim.vimAlias = true;
+		
           vim.lsp = {
             enable = true;
             formatOnSave = true;
@@ -28,7 +28,7 @@
 	    nix.enable = true;
 	    python.enable = true;
 	    lua.enable = true;
-	  }
+	  };
 
           vim.statusline.lualine.enable = true;
           vim.telescope.enable = true;
