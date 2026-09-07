@@ -24,6 +24,8 @@
         settings = {
           disable_ligatures = "never";
 
+          shell = "${pkgs.zsh}/bin/zsh";
+
           enable_audio_bell = false;
           confirm_os_window_close = 0;
           background_opacity = "0.9";
