@@ -5,10 +5,10 @@
 
     {
       imports = [
-        # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.niri
         self.nixosModules.nvf
+        self.nixosModules.zen-browser
       ];
       nix.settings.experimental-features = [
         "nix-command"
