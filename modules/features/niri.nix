@@ -30,10 +30,9 @@
           layout.gaps = 5;
 
           binds = {
-            "Mod+Return".spawn-sh = lib.getExe pkgs.kitty;
+            "Mod+T".spawn-sh = "kitty";
             "Mod+Q".close-window = _: { };
             "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
-            "Mod+D".spawn-sh = lib.getExe pkgs.fuzzel;
             "Mod+F".maximize-column = _: { };
             "Mod+Shift+F".fullscreen-window = _: { };
           };
