@@ -16,7 +16,7 @@
       shellAliases = {
         ll = "ls -l";
         edit = "sudo -e";
-        rebuild = "sudo nixos-rebuild switch";
+        rebuild = "sudo nixos-rebuild switch --flake .#myMachine";
       };
 
       histSize = 10000;
