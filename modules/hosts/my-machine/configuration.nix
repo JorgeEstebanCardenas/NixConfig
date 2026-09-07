@@ -11,6 +11,7 @@
         self.nixosModules.zen-browser
         self.nixosModules.kitty
         self.nixosModules.development
+        self.nixosModules.base
       ];
       nix.settings.experimental-features = [
         "nix-command"
