@@ -27,9 +27,9 @@
               vim.globals.mapleader = " ";
 
               vim.options = {
-                tabstop = 4;
-                shiftwidth = 4;
-                softtabstop = 4;
+                tabstop = 2;
+                shiftwidth = 2;
+                softtabstop = 2;
                 expandtab = true;
               };
 
@@ -64,7 +64,7 @@
                   action = ":Telescope";
                 }
                 {
-                  key = "<leader>tt;";
+                  key = "<leader>tt";
                   mode = "n";
                   action = ":NvimTreeToggle";
                 }
