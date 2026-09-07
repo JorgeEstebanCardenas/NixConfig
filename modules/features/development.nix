@@ -4,5 +4,7 @@
       uv
       godotPackages_4_7.godot
     ];
+
+    programs.nix-ld.enable = true;
   };
 }
