@@ -22,12 +22,6 @@
         };
 
         settings = {
-          #font_family = "FiraCode Nerd Font";
-          #bold_font = "FiraCode Nerd Font Bold";
-          #italic_font = "FiraCode Nerd Font Italic";
-          #bold_italic_font = "FiraCode Nerd Font Bold Italic";
-          #font_size = 11;
-
           disable_ligatures = "never";
 
           enable_audio_bell = false;

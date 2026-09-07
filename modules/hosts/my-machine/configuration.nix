@@ -9,6 +9,7 @@
         self.nixosModules.niri
         self.nixosModules.nvf
         self.nixosModules.zen-browser
+        self.nixosModules.kitty
       ];
       nix.settings.experimental-features = [
         "nix-command"
