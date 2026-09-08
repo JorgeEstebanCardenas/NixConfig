@@ -12,6 +12,7 @@
         self.nixosModules.kitty
         self.nixosModules.development
         self.nixosModules.base
+        self.nixosModules.nvidia
       ];
       nix.settings.experimental-features = [
         "nix-command"
