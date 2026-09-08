@@ -4,6 +4,8 @@
       btop
       spotify
       obsidian
+      fzf
+      lazygit
     ];
   };
 }
