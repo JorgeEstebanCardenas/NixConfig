@@ -1,6 +1,6 @@
 { self, inputs, ... }: {
 
-  flake.nixosModules.nvidia = { pkgs, lib, ... }: {
+  flake.nixosModules.gaming = { pkgs, lib, ... }: {
     programs = {
       gamemode.enable = true;
       gamescope.enable = true;

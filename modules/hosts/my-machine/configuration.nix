@@ -13,6 +13,7 @@
         self.nixosModules.development
         self.nixosModules.base
         self.nixosModules.nvidia
+        self.nixosModules.gaming
       ];
       nix.settings.experimental-features = [
         "nix-command"
