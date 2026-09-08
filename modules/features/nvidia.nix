@@ -11,6 +11,8 @@
       enable32Bit = true;
     };
 
+    hardware.nvidia.open = false;
+
     hardware.nvidia.prime = {
 
       offload.enable = true;
