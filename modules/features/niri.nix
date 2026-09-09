@@ -16,9 +16,6 @@
     {
       packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
         inherit pkgs;
-
-        extraPackages = [ pkgs.xwayland-satellite ];
-
         settings = {
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
