@@ -3,7 +3,6 @@
 
     services.xserver.videoDrivers = [
       "nvidia"
-      "modesetting"
     ];
 
     hardware.graphics = {
@@ -11,26 +10,30 @@
       enable32Bit = true;
     };
 
-    hardware.nvidia.open = false;
+    hardware.nvidia = {
+      open = false;
 
-    hardware.nvidia.modesetting.enable = true;
+      modesetting.enable = true;
 
-    hardware.nvidia.powerManagement.enable = true;
+      powerManagement.enable = true;
 
-    hardware.nvidia.nvidiaSettings = true;
+      nvidiaSettings = true;
 
-    hardware.nvidia.prime = {
+      prime = {
 
-      offload = {
-        enable = true;
-        enableOffloadCmd = true;
+        offload = {
+          enable = true;
+          enableOffloadCmd = true;
+        };
+
+        #sync.enable = true;
+
+        intelBusId = "PCI:0:2:0";
+        nvidiaBusId = "PCI:1:0:0";
+
       };
 
-      #sync.enable = true;
-
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
-
     };
+
   };
 }
