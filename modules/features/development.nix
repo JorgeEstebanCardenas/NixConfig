@@ -3,7 +3,10 @@
     environment.systemPackages = with pkgs; [
       uv
       godotPackages_4_7.godot
+      pkg-config
     ];
+
+    programs.direnv.enable = true;
 
     programs.nix-ld.enable = true;
 
