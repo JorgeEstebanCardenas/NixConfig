@@ -47,6 +47,14 @@
                 lua.enable = true;
               };
 
+              vim.git = {
+                gitsigns.enable = true;
+                git-conflict.enable = true;
+                hunk-nvim.enable = true;
+                neogit.enable = true;
+                octo-nvim.enable = true;
+              };
+
               vim.statusline.lualine.enable = true;
               vim.telescope.enable = true;
               vim.treesitter.enable = true;
@@ -72,6 +80,11 @@
                   key = "<leader>t";
                   mode = "n";
                   action = ":NvimTreeFocus";
+                }
+                {
+                  key = "<leader>gg";
+                  mode = "n";
+                  action = ":Neogit";
                 }
               ];
             }
