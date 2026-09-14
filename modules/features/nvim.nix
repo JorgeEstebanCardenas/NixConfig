@@ -51,7 +51,7 @@
                 json.enable = true;
                 markdown.enable = true;
                 typescript.enable = true;
-                dart.environment = true;
+                dart.enable = true;
               };
 
               vim.git = {
