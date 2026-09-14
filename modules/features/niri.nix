@@ -23,6 +23,8 @@
 
           xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
+          hotkey-overlay.skip-at-startup = _: { };
+
           input.keyboard.xkb.layout = "latam";
 
           input.touchpad.natural-scroll = _: { };
