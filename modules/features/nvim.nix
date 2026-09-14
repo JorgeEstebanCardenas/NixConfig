@@ -45,6 +45,12 @@
                 nix.enable = true;
                 python.enable = true;
                 lua.enable = true;
+
+                css.enable = true;
+                html.enable = true;
+                json.enable = true;
+                markdown.enable = true;
+                typescript.enable = true;
               };
 
               vim.git = {
@@ -55,6 +61,7 @@
                 octo-nvim.enable = true;
               };
 
+              vim.autocomplete.blink-cmp.enable = true;
               vim.statusline.lualine.enable = true;
               vim.telescope.enable = true;
               vim.treesitter.enable = true;
