@@ -94,6 +94,21 @@
                   mode = "n";
                   action = ":Neogit";
                 }
+                {
+                  key = "<leader>te";
+                  mode = "n";
+                  action = ":term";
+                }
+                {
+                  key = "<Esc>";
+                  mode = "t";
+                  action = "<C-\\><C-n>";
+                }
+                {
+                  key = "<leader><tab>n";
+                  mode = "n";
+                  action = ":tabnew";
+                }
               ];
             }
           ];
