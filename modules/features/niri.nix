@@ -27,7 +27,11 @@
 
           input.keyboard.xkb.layout = "latam";
 
-          input.touchpad.natural-scroll = _: { };
+          input.touchpad = {
+            tap = _: { };
+            natural-scroll = _: { };
+            tap-button-map = "left-right-middle";
+          };
 
           layout.gaps = 5;
 
