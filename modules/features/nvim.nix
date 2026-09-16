@@ -110,6 +110,25 @@
                   action = ":tabnew";
                 }
               ];
+
+              # Flutter extra config
+              vim.pluginRC.flutter-tools = lib.mkForce (
+                lib.nvim.dag.entryAfter [ "lsp-servers" ] ''
+                  require('flutter-tools').setup {
+                    capabilities = capabilities,
+                  }
+
+                  vim.api.nvim_create_autocmd("LspAttach", {
+                    callback = function(ev)
+                      local client = vim.lsp.get_client_by_id(ev.data.client_id)
+                      if client and client.name == "dartls" then
+                        vim.lsp.document_color.enable(true, { bufnr = ev.buf })
+                      end
+                    end,
+                  })
+                ''
+              );
+
             }
           ];
         }).neovim;
