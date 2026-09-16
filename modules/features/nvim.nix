@@ -113,7 +113,7 @@
 
               # Flutter extra config
               vim.pluginRC.flutter-tools = lib.mkForce (
-                lib.nvim.dag.entryAfter [ "lsp-servers" ] ''
+                inputs.nvf.lib.nvim.dag.entryAfter [ "lsp-servers" ] ''
                   require('flutter-tools').setup {
                     capabilities = capabilities,
                   }
