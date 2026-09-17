@@ -1,6 +1,6 @@
 { self, inputs, ... }: {
   flake.nixosModules.containers = { pkgs, lib, ... }: {
-    environment.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       podman-compose
       podman-tui
     ];
