@@ -15,6 +15,7 @@
         self.nixosModules.nvidia
         self.nixosModules.gaming
         self.nixosModules.containers
+        self.nixosModules.ai
       ];
       nix.settings.experimental-features = [
         "nix-command"
