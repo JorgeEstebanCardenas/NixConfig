@@ -66,7 +66,9 @@
 
       # Enable sound with pipewire.
       services.pulseaudio.enable = false;
+
       security.rtkit.enable = true;
+
       services.pipewire = {
         enable = true;
         alsa.enable = true;
@@ -114,7 +116,7 @@
       services.openssh.enable = true;
 
       # Enavle polkit
-      services.polkit.enable = true;
+      security.polkit.enable = true;
 
       systemd = {
         user.services.polkit-gnome-authentication-agent-1 = {
