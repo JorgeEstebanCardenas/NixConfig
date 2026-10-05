@@ -105,7 +105,7 @@
         wget
         git
         polkit_gnome
-        lenovo_legion
+        lenovo-legion
       ];
 
       fonts.packages = with pkgs; [
