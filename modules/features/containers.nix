@@ -27,7 +27,7 @@
     };
 
     systemd.tmpfiles.rules = [
-      "d /var/lib/omniroute 0750 root root - -"
+      "d /var/lib/omniroute 0750 1000 1000 - -"
     ];
   };
 }
