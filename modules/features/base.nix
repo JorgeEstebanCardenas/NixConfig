@@ -7,6 +7,7 @@
       fzf
       lazygit
       vesktop
+      localsend
     ];
   };
 }
