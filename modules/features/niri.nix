@@ -40,7 +40,7 @@
           binds = {
             "Mod+T".spawn-sh = "kitty";
             "Mod+Q".close-window = _: { };
-            "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+            "Mod+S".spawn-sh = "noctalia msg panel-toggle launcher";
             "Mod+F".maximize-column = _: { };
             "Mod+Shift+F".fullscreen-window = _: { };
           };
