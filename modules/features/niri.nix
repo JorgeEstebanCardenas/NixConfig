@@ -1,6 +1,12 @@
 { self, inputs, ... }: {
   flake.nixosModules.niri = { pkgs, lib, ... }: {
-    environment.systemPackages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia ];
+    #environment.systemPackages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia ];
+
+    programs.noctalia = {
+      enable = true;
+
+      recommendedServices.enable = true;
+    };
 
     programs.niri = {
       enable = true;
